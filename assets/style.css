@@ -16,7 +16,7 @@
     width: 100vw;
     height: 80px;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: rgb(253, 253, 253);
 }
 
 .logo {
@@ -90,6 +90,14 @@
     grid-column: 5/6;
 }
 
+.net {
+    text-decoration-line: none;
+}
+
+.net:hover {
+    text-decoration-line: underline;
+}
+
 .nav2 {
     display: grid;
     grid-row: 1/2;
@@ -111,6 +119,28 @@
     background-color: #7854F7;
     border-radius: 5px;
 }
+
+.button {
+    box-shadow: var(--block-shadow);
+
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    /*скорость перехода*/
+}
+
+.button:hover {
+    background-color: #7854F7;
+    /*цвет фона*/
+    box-shadow: 0px 1px 5px 5px rgba(209, 209, 209, 1);
+    /*тень*/
+    -webkit-box-shadow: 0px 1px 5px 5px rgba(209, 209, 209, 1);
+    -moz-box-shadow: 0px 1px 5px 5px rgbargba(209, 209, 209, 1);
+    ;
+    transform: scale(1.00);
+    /*увеличение размера*/
+}
+
 
 .ttle_b {
     font-family: 'Oswald', sans-serif;
